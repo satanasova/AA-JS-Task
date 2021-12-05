@@ -30,6 +30,11 @@
   background-color: #e9e9ed;
   width: 3rem; }
 
+.quiz .form-check-label {
+  cursor: pointer; }
+  .quiz .form-check-label:hover {
+    background: rgba(0, 0, 0, 0.03); }
+
 body {
   min-height: 100vh;
   position: relative; }

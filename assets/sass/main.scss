@@ -54,6 +54,16 @@
 
 }
 
+.quiz {
+    .form-check-label {
+        cursor: pointer;
+        &:hover {
+            background: rgba(0,0,0,.03);
+            // color: white;
+        }
+    }
+}
+
 body {
     min-height: 100vh;
     position: relative;
