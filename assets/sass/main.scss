@@ -1,0 +1,64 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.min-w-100 {
+    min-width: 100%;
+}
+
+.btn {
+    transition: all .15s ease-in-out;
+    &-green {
+        color: inherit;
+        background-color: #46cc51;
+        &:hover {
+            background-color: darken(#46cc51, 20%);
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(73,204,73,.25);
+        }
+        
+    }
+
+    &:hover {
+        color: inherit;   
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+}
+
+.todo {
+    background: linear-gradient(to right, rgba(0,210,254,1) 0%,rgba(9,13,124,1) 100%);
+    color: white;
+}
+
+.cart {
+    &-head {
+        border-bottom: 2px solid #ddd;
+    }
+
+    &-body {
+        .row {
+            &:nth-child(odd){
+                background-color: #f9f9f9;
+            }
+        }
+        .product{
+            &-qty {
+                background-color: #e9e9ed;
+                width: 3rem;
+            }
+        }
+    }
+
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    .result {
+        background-color: rgba(0,0,0,0.4);
+        backdrop-filter: blur(5px);
+    }
+}

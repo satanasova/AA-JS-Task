@@ -1,0 +1,38 @@
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+.min-w-100 {
+  min-width: 100%; }
+
+.btn {
+  transition: all .15s ease-in-out; }
+  .btn-green {
+    color: inherit;
+    background-color: #46cc51; }
+    .btn-green:hover {
+      background-color: #25872d; }
+    .btn-green:focus {
+      box-shadow: 0 0 0 0.25rem rgba(73, 204, 73, 0.25); }
+  .btn:hover {
+    color: inherit; }
+  .btn:active {
+    transform: scale(0.9); }
+
+.todo {
+  background: linear-gradient(to right, #00d2fe 0%, #090d7c 100%);
+  color: white; }
+
+.cart-head {
+  border-bottom: 2px solid #ddd; }
+
+.cart-body .row:nth-child(odd) {
+  background-color: #f9f9f9; }
+
+.cart-body .product-qty {
+  background-color: #e9e9ed;
+  width: 3rem; }
+
+body {
+  min-height: 100vh;
+  position: relative; }
+  body .result {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px); }
