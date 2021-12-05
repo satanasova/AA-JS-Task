@@ -6,7 +6,6 @@ function todo(elementID) {
 
     const taskItemTemp = todoContainer.querySelector('[data-template="task-item"]');
     taskItemTemp.removeAttribute('data-template');
-    // taskItemTemp.classList.remove('d-none');
     taskItemTemp.remove();
 
     todoContainer.addEventListener('click', e => {

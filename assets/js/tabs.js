@@ -6,8 +6,8 @@ function tab(elementID){
     const tabs = Array.from(tabTitles.children);
     const contents = Array.from(tabContents.children);
 
-    tabs[2].classList.add('active');
-    contents[2].classList.add('active');
+    tabs[0].classList.add('active');
+    contents[0].classList.add('active');
 
     tabTitles.addEventListener('click', e => {
         const clickedTab = e.target;

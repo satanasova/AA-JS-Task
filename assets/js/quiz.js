@@ -30,7 +30,6 @@ function quiz(quizID,questionsArray) {
             const newSlideIdx = questionIdx + 1 
             const targetContainerForChoices = newSlide.querySelector('.choices');
     
-            newSlide.setAttribute('data-Idx', newSlideIdx);
             newSlide.querySelector('.question-num').innerText = `Question ${newSlideIdx}/${questionsCount}`
             newSlide.querySelector('.question').innerText = questionData.question;
     
@@ -48,22 +47,18 @@ function quiz(quizID,questionsArray) {
                 }
     
                 targetContainerForChoices.append(newChoice)
-                // console.log(questionIdx,choice,choiceIdx,questionData.answer);
             })
     
-            // console.log(newSlide);
             slider.append(newSlide)
         })
     }
 
     function initSlider() {
-        // const slidesCount = sliderContainer.querySelectorAll('.slide').length;
         let sliderIdx = + slider.getAttribute('data-idx');
         const prev = sliderContainer.querySelector('.btn-prev');
         const next = sliderContainer.querySelector('.btn-next');
     
         sliderContainer.addEventListener('click', e => {
-            // console.log(e.target);
             if (e.target === next) {
                 slider.scrollBy({top: 0, left: slider.offsetWidth, behavior: 'smooth'});
     
@@ -90,10 +85,10 @@ function quiz(quizID,questionsArray) {
             const choiceInputs = Array.from(slide.querySelectorAll('.form-check-input'));
             const answerInput = slide.querySelector('.form-check-input.answer');
 
-            // initInputs(slide,choiceInputs)
             if (choiceInputs.some(input => input.checked)){
                 slide.classList.add('answered');
             }
+
             if(answerInput.checked){
                 correctAnswersCount++;
             }
@@ -179,7 +174,7 @@ const questionsJS = [
         answer: 2
     },
     {
-        question: 'The syntax of spread operator and the rest parameter are exactly the same.',
+        question: 'The syntaxes of spread operator and the rest parameter are exactly the same.',
         choices: ['True','False'],
         answer: 0
     },

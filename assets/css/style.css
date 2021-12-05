@@ -1,4 +1,8 @@
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+body {
+  min-height: 100vh;
+  position: relative; }
+
 .min-w-100 {
   min-width: 100%; }
 
@@ -12,7 +16,7 @@
     .btn-green:focus {
       box-shadow: 0 0 0 0.25rem rgba(73, 204, 73, 0.25); }
   .btn:hover {
-    color: inherit; }
+    color: black; }
   .btn:active {
     transform: scale(0.9); }
 
@@ -30,14 +34,13 @@
   background-color: #e9e9ed;
   width: 3rem; }
 
-.quiz .form-check-label {
-  cursor: pointer; }
-  .quiz .form-check-label:hover {
+.quiz .form-check {
+  padding-left: 2rem; }
+  .quiz .form-check > * {
+    cursor: pointer; }
+  .quiz .form-check:hover {
     background: rgba(0, 0, 0, 0.03); }
 
-body {
-  min-height: 100vh;
-  position: relative; }
-  body .result {
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px); }
+.quiz .result {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px); }

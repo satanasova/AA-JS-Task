@@ -1,5 +1,10 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
 .min-w-100 {
     min-width: 100%;
 }
@@ -19,7 +24,7 @@
     }
 
     &:hover {
-        color: inherit;   
+        color: black;   
     }
 
     &:active {
@@ -55,20 +60,21 @@
 }
 
 .quiz {
-    .form-check-label {
-        cursor: pointer;
+    .form-check {
+        padding-left: 2rem;
+        &>*{
+            cursor: pointer;
+        }
         &:hover {
             background: rgba(0,0,0,.03);
             // color: white;
         }
     }
-}
 
-body {
-    min-height: 100vh;
-    position: relative;
     .result {
         background-color: rgba(0,0,0,0.4);
         backdrop-filter: blur(5px);
     }
 }
+
+
